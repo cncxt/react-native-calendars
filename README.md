@@ -1,5 +1,5 @@
 **备注** <br>
-  这里是备注
+  翻译为中文 方便查看
 
 ---
 
@@ -115,11 +115,10 @@ LocaleConfig.defaultLocale = 'fr';
 />
 ```
 
-#### Date marking
+#### 日期的标记
 
-**!Disclaimer!** Make sure that `markedDates` param is immutable. If you change `markedDates` object content but the reference to it does not change calendar update will not be triggered.
-
-Dot marking
+**!注意!** 不要更改参数 `markedDates`. 如果你更改了这个对象 但是没有更改对其的引用的话，日历更新就不会触发标记效果。
+以点来标记
 
 <kbd>
   <img height=50 src="https://github.com/wix-private/wix-react-native-calendar/blob/master/demo/marking1.png?raw=true">
@@ -127,7 +126,7 @@ Dot marking
 
 ```javascript
 <Calendar
-  // Collection of dates that have to be marked. Default = {}
+  //需要标记的日期的集合 Default = {}
   markedDates={{
     '2012-05-16': {selected: true, marked: true, selectedColor: 'blue'},
     '2012-05-17': {marked: true},
@@ -137,9 +136,9 @@ Dot marking
 />
 ```
 
-You can customise a dot color for each day independently.
+你可以为单独的日期定义一个颜色.
 
-Multi-Dot marking
+以多个点来标记日期
 
 <kbd>
  <img height=50 src="https://github.com/wix-private/wix-react-native-calendar/blob/master/demo/marking4.png?raw=true">
