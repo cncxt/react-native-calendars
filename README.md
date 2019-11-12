@@ -10,11 +10,11 @@
 
 This module includes various customizable react native calendar components.
 
-The package is both **Android** and **iOS** compatible.
+本开发包同时兼容 **Android** and **iOS** .
 
-## Try it out
+##小试牛刀
 
-You can run example module by performing these steps:
+运行下面的命令，你可以查看我们提供的示例:
 
 ```
 $ git clone git@github.com:wix/react-native-calendars.git
@@ -26,7 +26,7 @@ You can check example screens source code in [example module screens](https://gi
 
 This project is compatible with Expo/CRNA (without ejecting), and the examples have been [published on Expo](https://expo.io/@community/react-native-calendars-example)
 
-## Installation
+## 安装
 
 ```
 $ npm install --save react-native-calendars
