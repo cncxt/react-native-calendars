@@ -8,7 +8,7 @@
 [![Version](https://img.shields.io/npm/v/react-native-calendars.svg)](https://www.npmjs.com/package/react-native-calendars)
 [![Build Status](https://travis-ci.org/wix/react-native-calendars.svg?branch=master)](https://travis-ci.org/wix/react-native-calendars)
 
-This module includes various customizable react native calendar components.
+本插件涵盖了各种各样的自定义的React Native 组件
 
 本开发包同时兼容 **Android** and **iOS** .
 
@@ -32,13 +32,13 @@ This project is compatible with Expo/CRNA (without ejecting), and the examples h
 $ npm install --save react-native-calendars
 ```
 
-The solution is implemented in JavaScript so no native module linking is required.
+本插件是使用JavaScript来实现的，所以并不需要链接原生的模块。
 
-## Usage
+## 用法
 
 `import {`[Calendar](#calendar), [CalendarList](#calendarlist), [Agenda](#agenda)`} from 'react-native-calendars';`
 
-All parameters for components are optional. By default the month of current local date will be displayed.
+本组件的所有参数都是可选的. 默认显示的是当前本地时间的月份.
 
 Event handler callbacks are called with `calendar objects` like this:
 
