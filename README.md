@@ -75,7 +75,7 @@ LocaleConfig.defaultLocale = 'fr';
   <img src="https://github.com/wix-private/wix-react-native-calendar/blob/master/demo/calendar.gif?raw=true">
 </kbd>
 
-#### Basic parameters
+#### 通用参数
 
 ```javascript
 <Calendar
