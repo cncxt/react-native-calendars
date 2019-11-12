@@ -79,38 +79,38 @@ LocaleConfig.defaultLocale = 'fr';
 
 ```javascript
 <Calendar
-  // Initially visible month. Default = Date()
+  // 初始化所显示的月份，默认是当前月份
   current={'2012-03-01'}
-  // Minimum date that can be selected, dates before minDate will be grayed out. Default = undefined
+  // 设置可选日期的最早日期，比这个日期更早的日期会用灰色显示。默认是undefined.
   minDate={'2012-05-10'}
-  // Maximum date that can be selected, dates after maxDate will be grayed out. Default = undefined
+  // 设置可选日期的最晚日期，比这个日期更晚的日期会用灰色显示，默认是undefined.
   maxDate={'2012-05-30'}
-  // Handler which gets executed on day press. Default = undefined
+  // 点击日期的处理函数，当你手指按下日期中的某一天会触发这个函数。默认是undefined
   onDayPress={(day) => {console.log('selected day', day)}}
-  // Handler which gets executed on day long press. Default = undefined
+  // 长按日期的处理函数，当你手指长时间按住日期中的某一天会触发这个函数。默认是undefined
   onDayLongPress={(day) => {console.log('selected day', day)}}
-  // Month format in calendar title. Formatting values: http://arshaw.com/xdate/#Formatting
+  // 设置日历标题中月份的格式，格式参考：http://arshaw.com/xdate/#Formatting
   monthFormat={'yyyy MM'}
-  // Handler which gets executed when visible month changes in calendar. Default = undefined
+  // 当日历中的月份改变的时候会触发这个函数，默认为undefined
   onMonthChange={(month) => {console.log('month changed', month)}}
-  // Hide month navigation arrows. Default = false
+  // 是否隐藏选择月份的箭头，默认为false不隐藏
   hideArrows={true}
-  // Replace default arrows with custom ones (direction can be 'left' or 'right')
+  // 使用自定义的图标来替换默认的箭头（方向可以是‘left’ 或者 ‘right’）
   renderArrow={(direction) => (<Arrow />)}
-  // Do not show days of other months in month page. Default = false
+  // 不在当前月份中显示其他月份的日期，默认为false显示
   hideExtraDays={true}
-  // If hideArrows=false and hideExtraDays=false do not switch month when tapping on greyed out
-  // day from another month that is visible in calendar page. Default = false
+  // 如果 hideArrows=false 并且 hideExtraDays=false 当点击外部的灰色日期的时候不跳转月份
+  // 在日历面板中是否显示其他月份的日期，默认为false不显示
   disableMonthChange={true}
-  // If firstDay=1 week starts from Monday. Note that dayNames and dayNamesShort should still start from Sunday.
+  // 如果 firstDay=1 每周从周一开始.需要注意的是dayNames和hayNamesShort仍然以周日为开端
   firstDay={1}
-  // Hide day names. Default = false
+  // 是否隐藏日期的名字，默认为false不隐藏
   hideDayNames={true}
-  // Show week numbers to the left. Default = false
+  // 是否在左侧显示周几，默认为false不显示
   showWeekNumbers={true}
-  // Handler which gets executed when press arrow icon left. It receive a callback can go back month
+  // 当点击左侧箭头图标的时候会执行这个函数。它还有一个回调函数，可以前滚一个月
   onPressArrowLeft={substractMonth => substractMonth()}
-  // Handler which gets executed when press arrow icon left. It receive a callback can go next month
+  // 当点击右侧箭头图标的时候会执行这个函数。它还有一个回调函数，可以后滚一个月
   onPressArrowRight={addMonth => addMonth()}
 />
 ```
