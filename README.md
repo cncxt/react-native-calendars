@@ -160,7 +160,7 @@ const workout = {key:'workout', color: 'green'};
 ```
 
 
-Period marking
+以面标记日期
 
 <kbd>
   <img height=50 src="https://github.com/wix-private/wix-react-native-calendar/blob/master/demo/marking2.png?raw=true">
@@ -184,7 +184,7 @@ Period marking
 />
 ```
 
-Multi-period marking
+多个线来标记日期
 
 <kbd>
   <img height=50 src="https://github.com/wix-private/wix-react-native-calendar/blob/master/demo/marking6.png?raw=true">
@@ -254,7 +254,7 @@ Custom marking allows you to customize each marker with custom styles.
 
 Keep in mind that different marking types are not compatible. You can use just one marking style for calendar.
 
-#### Displaying data loading indicator
+#### 显示日期加载指示器
 
 <kbd>
   <img height=50 src="https://github.com/wix-private/wix-react-native-calendar/blob/master/demo/loader.png?raw=true">
@@ -262,7 +262,7 @@ Keep in mind that different marking types are not compatible. You can use just o
 
 The loading indicator next to month name will be displayed if `<Calendar />` has `displayLoadingIndicator` property and `markedDates` collection does not have a value for every day of the month in question. When you load data for days, just set `[]` or special marking value to all days in `markedDates` collection.
 
-#### Customizing look & feel
+####  自定义外观和体验
 
 ```javascript
 <Calendar
@@ -300,7 +300,7 @@ The loading indicator next to month name will be displayed if `<Calendar />` has
 />
 ```
 
-#### Advanced styling
+#### 高级样式
 
 If you want to have complete control over calendar styles you can do it by overriding default style.js files. For example, if you want to override calendar header style first you have to find stylesheet id for this file:
 
@@ -349,31 +349,31 @@ The dayComponent prop has to receive a RN component or function that receive pro
 
 If you implement an awesome day component please make a PR so that other people could use it :)
 
-### CalendarList
+### 日历列表
 
 <kbd>
   <img src="https://github.com/wix-private/wix-react-native-calendar/blob/master/demo/calendar-list.gif?raw=true">
 </kbd>
 
-`<CalendarList />` is scrollable semi-infinite calendar composed of `<Calendar />` components. Currently it is possible to scroll 4 years back and 4 years to the future. All paramters that are available for `<Calendar />` are also available for this component. There are also some additional params that can be used:
+`<CalendarList />` 是一个可以滚动的日历，当前它可以向上滚动四年和向下滚动思念. 所有`<Calendar />`可以用的参数对于本组件同样适用。此外还有一些额外的参数可以使用;
 
 ```javascript
 <CalendarList
-  // Callback which gets executed when visible months change in scroll view. Default = undefined
+  // 在滚动视图中，当月份改变的时候会调用这个函数，默认为undefined
   onVisibleMonthsChange={(months) => {console.log('now these months are visible', months);}}
-  // Max amount of months allowed to scroll to the past. Default = 50
+  // 向上滚动的最大的月份. Default = 50
   pastScrollRange={50}
-  // Max amount of months allowed to scroll to the future. Default = 50
+  // 向下滚动的最大的月份. Default = 50
   futureScrollRange={50}
-  // Enable or disable scrolling of calendar list
+  // 设置日历列表是否可以滚动
   scrollEnabled={true}
-  // Enable or disable vertical scroll indicator. Default = false
+  // 启用或者禁用水平滚动指示器. Default = false
   showScrollIndicator={true}
   ...calendarParams
 />
 ```
 
-#### Horizontal CalendarList
+#### 水平日历列表
 
 <kbd>
   <img src="https://github.com/wix-private/wix-react-native-calendar/blob/master/demo/horizontal-calendar-list.gif?raw=true">
@@ -383,11 +383,11 @@ You can also make the `CalendarList` scroll horizontally. To do that you need to
 
 ```javascript
 <CalendarList
-  // Enable horizontal scrolling, default = false
+  // 启用水平滚动, default = false
   horizontal={true}
-  // Enable paging on horizontal, default = false
+  // 当设备处于水平方向的时候，启用水平滚动日历, default = false
   pagingEnabled={true}
-  // Set custom calendarWidth.
+  // 设置当前日历的宽度.
   calendarWidth={320}
   ...calendarListParams
   ...calendarParams
