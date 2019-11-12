@@ -52,9 +52,9 @@ Event handler callbacks are called with `calendar objects` like this:
 }
 ```
 
-Parameters that require date types accept YYYY-MM-DD formated datestrings, JavaScript date objects, `calendar objects` and UTC timestamps.
+参数中的日期类型要求可以是"YYYY-MM-DD"形式的日期字符串，JavaScript日期对象，calendar对象，或者UTC时间戳
 
-Calendars can be localized by adding custom locales to `LocaleConfig` object:
+你可以向LocaleConfig对象中添加本地标识来实现日历的本地化
 
 ```javascript
 import {LocaleConfig} from 'react-native-calendars';
@@ -69,7 +69,7 @@ LocaleConfig.locales['fr'] = {
 LocaleConfig.defaultLocale = 'fr';
 ```
 
-### Calendar
+### 日历
 
 <kbd>
   <img src="https://github.com/wix-private/wix-react-native-calendar/blob/master/demo/calendar.gif?raw=true">
