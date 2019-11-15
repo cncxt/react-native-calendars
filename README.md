@@ -260,7 +260,7 @@ Keep in mind that different marking types are not compatible. You can use just o
   <img height=50 src="https://github.com/wix-private/wix-react-native-calendar/blob/master/demo/loader.png?raw=true">
 </kbd>
 
-The loading indicator next to month name will be displayed 如果 `<Calendar />` 定义了 `displayLoadingIndicator` 属性 并且 `markedDates` 集合并没有对月份中的天数指定标记n. 当我们加载日期中的天数的时候, 仅仅需要设置为 `[]` 或者在集合中指定所有天数需要的标记.
+ 如果 `<Calendar />` 指定 `displayLoadingIndicator={true}`  并且 `markedDates` 集合并没有对所有月份中的天数指定标记的话.这个加载图标就会显示， 所以我们在加载日期中的天数的时候, 要么将`markedDates`设置为 `[]` 要么在集合中指定所有天数的标记.
 
 ####  自定义外观和体验
 
